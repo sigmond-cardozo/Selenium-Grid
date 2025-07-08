@@ -8,6 +8,6 @@ java -jar selenium-server.jar distributor --sessions http://localhost:5556 --ses
 java -jar selenium-server.jar router --sessions http://localhost:5556 --distributor http://localhost:5553 --sessionqueue http://localhost:5559
 java -jar selenium-server.jar node
 
-http://localhost:4444/ui/#
+Grid: http://localhost:4444/ui/#
 
-http://localhost:8080/
+Jenkins: http://localhost:8080/
