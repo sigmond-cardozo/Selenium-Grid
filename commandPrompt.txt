@@ -1,0 +1,13 @@
+Download Selenium server grid from https://www.selenium.dev/downloads/ and rename the file to "selenium-server"
+INFO: https://www.selenium.dev/documentation/grid/getting_started/
+
+java -jar selenium-server.jar event-bus
+java -jar selenium-server.jar sessions
+java -jar selenium-server.jar sessionqueue
+java -jar selenium-server.jar distributor --sessions http://localhost:5556 --sessionqueue http://localhost:5559 --port 5553 --bind-bus false
+java -jar selenium-server.jar router --sessions http://localhost:5556 --distributor http://localhost:5553 --sessionqueue http://localhost:5559
+java -jar selenium-server.jar node
+
+http://localhost:4444/ui/#
+
+http://localhost:8080/
