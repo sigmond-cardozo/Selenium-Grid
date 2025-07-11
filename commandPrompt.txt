@@ -11,3 +11,5 @@ java -jar selenium-server.jar node
 Grid: http://localhost:4444/ui/#
 
 Jenkins: http://localhost:8080/
+
+clean test -DsuiteXmlFile=LoginTestsGrid.xml
