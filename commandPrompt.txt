@@ -13,3 +13,5 @@ Grid: http://localhost:4444/ui/#
 Jenkins: http://localhost:8080/
 
 clean test -DsuiteXmlFile=LoginTestsGrid.xml
+mvn clean test -DsuiteXmlFile=LoginTestsGrid.xml -Denv=UAT -DbuildVersion=1.4.2
+// add mvn if running from command prompt otherwise mvn is not required in jenkins
